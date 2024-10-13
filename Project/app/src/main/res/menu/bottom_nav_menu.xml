@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        android:iconTint="#228BE6"/>
+    <item
+        android:id="@+id/MyeBay"
+        android:icon="@drawable/maleuser"
+        android:title="My eBay" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="Search" />
+    <item
+        android:id="@+id/inbox"
+        android:icon="@drawable/bell"
+        android:title="Inbox" />
+    <item
+        android:id="@+id/selling"
+        android:icon="@drawable/tag"
+
+        android:title="Selling" />
+</menu>

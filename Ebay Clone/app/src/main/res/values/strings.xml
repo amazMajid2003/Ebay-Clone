@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">eBay_clone</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_search">Search</string>
+    <string name="title_myeBay">My eBay</string>
+    <string name="title_selling">Selling</string>
+    <string name="title_notifications">Inbox</string>
+</resources>

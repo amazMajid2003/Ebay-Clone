@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_sdp_8">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/margin_sdp_2"
+        android:layout_marginEnd="@dimen/margin_sdp_2">
+
+        <!-- Existing horizontal LinearLayout for Sign Up at the top -->
+        <LinearLayout
+            android:id="@+id/linearLayoutSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_sdp_8">
+
+            <ImageView
+                android:id="@+id/imageViewSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_sdp_10"
+                android:layout_weight="0.15"
+                android:scaleType="center"
+                android:src="@drawable/cross_round_svgrepo_com" />
+
+            <TextView
+                android:id="@+id/textViewSignUp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.85"
+                android:gravity="center"
+                android:text="Create an account"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/textsize_sdp_24"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Centered content in a separate LinearLayout -->
+        <LinearLayout
+            android:id="@+id/centeredContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- New TextView for "Welcome" message -->
+            <TextView
+                android:id="@+id/textViewWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Let's get started"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_sdp_34"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center" />
+
+            <!-- Input field for Email -->
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_16"
+                android:hint="Email"
+                android:padding="10dp"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+            <!-- Input field for First Name -->
+            <EditText
+                android:id="@+id/editTextFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_8"
+                android:hint="First Name"
+                android:padding="10dp"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+            <!-- Input field for Last Name -->
+            <EditText
+                android:id="@+id/editTextLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_8"
+                android:hint="Last Name"
+                android:padding="10dp"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+            <!-- Input field for Password -->
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_8"
+                android:hint="Password"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/buttonSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_16"
+                android:background="@drawable/rounded_button"
+                android:text="Continue"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+            <!-- Create a Business Account Text -->
+            <TextView
+                android:id="@+id/textViewCreateBusinessAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_12"
+                android:text="Create a business account"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:textSize="@dimen/textsize_sdp_16"
+                android:textStyle="bold" />
+
+            <!-- LinearLayout for "Already a member?" and "Sign in" -->
+            <LinearLayout
+                android:id="@+id/linearLayoutCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_8"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- TextView for "Already a member?" -->
+                <TextView
+                    android:id="@+id/textViewAlreadyAMember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already a member?"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+
+                <!-- TextView for "Sign in" -->
+                <TextView
+                    android:id="@+id/textViewSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Sign in"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

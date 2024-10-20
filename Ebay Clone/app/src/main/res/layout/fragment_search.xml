@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="false"
+    tools:context="ui.search.SearchFragment">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_sdp_8"
+        android:backgroundTint="#E7E4E4"
+        android:queryHint="Search on eBay"
+        app:layout_constraintBottom_toTopOf="@+id/tabLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="@dimen/width_sdp_50"
+            android:layout_height="wrap_content"
+            android:text="Recent" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="@dimen/width_sdp_50"
+            android:layout_height="wrap_content"
+            android:text="Saved" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:contentDescription="Search Collection"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_sdp_50">
+
+            <!-- Search Image -->
+            <ImageView
+                android:id="@+id/searchIconCenter"
+                android:layout_width="@dimen/width_sdp_152"
+                android:layout_height="@dimen/width_sdp_152"
+                android:src="@drawable/baseline_manage_search_24"
+            android:contentDescription="Search Icon"
+            android:layout_marginBottom="16dp" />
+
+
+            <!-- 'Search on eBay' Text -->
+            <TextView
+                android:id="@+id/searchOnEbayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search on eBay"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 'Find your next favourite thing' Text -->
+            <TextView
+                android:id="@+id/findNextFavouriteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find your next favourite thing"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

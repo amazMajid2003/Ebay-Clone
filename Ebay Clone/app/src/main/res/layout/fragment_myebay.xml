@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="false"
+    tools:context=".ui.myebay.MyebayFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_sdp_65"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_sdp_10"
+            android:layout_weight="2"
+            android:text="My eBay"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="@dimen/textsize_sdp_24"
+            android:textStyle="bold" />   <!-- Set layout_weight to 2 -->
+
+        <ImageView
+            android:id="@+id/imageViewSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_sdp_10"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/baseline_search_24" />   <!-- Set layout_weight to 1 -->
+
+        <ImageView
+            android:id="@+id/imageViewCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_sdp_10"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/baseline_shopping_cart_24" />   <!-- Set layout_weight to 1 -->
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutProfile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sdp_53"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_sdp_4">
+
+                <ImageView
+                    android:id="@+id/imageViewProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/profile_default_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/textViewSignIn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:hint="Sign In"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textsize_sdp_24"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMessages"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sdp_53"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_sdp_4">
+
+                <ImageView
+                    android:id="@+id/imageViewMessages"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:scaleType="center"
+                    android:src="@drawable/baseline_mail_24" />
+
+                <TextView
+                    android:id="@+id/textViewMessages"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:hint="Messages"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="@dimen/margin_sdp_4"
+                android:layout_marginBottom="@dimen/margin_sdp_4" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMessages1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sdp_53"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_sdp_4">
+
+                <ImageView
+                    android:id="@+id/imageViewMessages1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:scaleType="center"
+                    android:src="@drawable/heart_angle_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/textViewMessages1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:hint="WatchList"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMessages2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sdp_53"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_sdp_4">
+
+                <ImageView
+                    android:id="@+id/imageViewMessages2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:scaleType="center"
+                    android:src="@drawable/refresh_double_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/textViewMessages2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:hint="Buy Again"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMessages3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sdp_53"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_sdp_4">
+
+                <ImageView
+                    android:id="@+id/imageViewMessages3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:scaleType="center"
+                    android:src="@drawable/box_unpacked_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/textViewMessages3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:hint="Purchases"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMessages4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sdp_53"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_sdp_4">
+
+                <ImageView
+                    android:id="@+id/imageViewMessages4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:scaleType="center"
+                    android:src="@drawable/auction_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/textViewMessages4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:hint="Bids &amp; Offers"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMessages5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sdp_53"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_sdp_4">
+
+                <ImageView
+                    android:id="@+id/imageViewMessages5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:scaleType="center"
+                    android:src="@drawable/price_tag_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/textViewMessages5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:hint="Selling"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMessages6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sdp_53"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_sdp_4">
+
+                <ImageView
+                    android:id="@+id/imageViewMessages6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:scaleType="center"
+                    android:src="@drawable/heart_angle_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/textViewMessages6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:hint="Saved"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMessages7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sdp_53"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_sdp_4">
+
+                <ImageView
+                    android:id="@+id/imageViewMessages7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:scaleType="center"
+                    android:src="@drawable/recently_viewed_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/textViewMessages7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:hint="Recently Viewed"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="@dimen/margin_sdp_4"
+                android:layout_marginBottom="@dimen/margin_sdp_4" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMessages8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sdp_53"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_sdp_4">
+
+                <ImageView
+                    android:id="@+id/imageViewMessages8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:scaleType="center"
+                    android:src="@drawable/category_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/textViewMessages8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:hint="Categories"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMessages9"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sdp_53"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_sdp_4">
+
+                <ImageView
+                    android:id="@+id/imageViewMessages9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:scaleType="center"
+                    android:src="@drawable/flash_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/textViewMessages9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:hint="Deals"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMessages10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sdp_53"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_sdp_4">
+
+                <ImageView
+                    android:id="@+id/imageViewMessages10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:scaleType="center"
+                    android:src="@drawable/wallet_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/textViewMessages10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:hint="Payments"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMessages11"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sdp_53"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_sdp_4">
+
+                <ImageView
+                    android:id="@+id/imageViewMessages11"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:scaleType="center"
+                    android:src="@drawable/baseline_settings_24" />
+
+                <TextView
+                    android:id="@+id/textViewMessages11"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:hint="Settings"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMessages12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_sdp_53"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_sdp_4">
+
+                <ImageView
+                    android:id="@+id/imageViewMessages12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:scaleType="center"
+                    android:src="@drawable/baseline_help_24" />
+
+                <TextView
+                    android:id="@+id/textViewMessages12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:hint="Help"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textsize_sdp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

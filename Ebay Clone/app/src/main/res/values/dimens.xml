@@ -1,0 +1,68 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+        <dimen name="activity_horizontal_margin">16dp</dimen>
+        <dimen name="activity_vertical_margin">16dp</dimen>
+
+        <!-- Padding and Margin -->
+        <dimen name="padding_sdp_8">8dp</dimen>
+        <dimen name="padding_sdp_5">5dp</dimen>
+        <dimen name="margin_sdp_2">2dp</dimen>
+        <dimen name="margin_sdp_4">4dp</dimen>
+        <dimen name="margin_sdp_8">8dp</dimen>
+        <dimen name="margin_sdp_50">50dp</dimen>
+        <dimen name="margin_sdp_10">10dp</dimen>
+        <dimen name="margin_sdp_15">15dp</dimen>
+        <dimen name="margin_sdp_16">16dp</dimen>
+        <dimen name="margin_sdp_12">12dp</dimen>
+        <dimen name="margin_sdp_20">20dp</dimen>
+        <dimen name="margin_sdp_93">93dp</dimen>
+
+        <!-- Text Sizes -->
+        <dimen name="textsize_sdp_20">20sp</dimen>
+        <dimen name="textsize_sdp_24">24sp</dimen>
+        <dimen name="textsize_sdp_34">34sp</dimen>
+        <dimen name="textsize_sdp_16">16sp</dimen>
+        <dimen name="textsize_sdp_12">12sp</dimen>
+    <dimen name="textsize_sdp_18">18sp</dimen>
+    <dimen name="textsize_sdp_26">26sp</dimen>
+
+        <!-- CardView Dimensions -->
+        <dimen name="corner_radius_sdp_30">30dp</dimen>
+        <dimen name="corner_radius_sdp_60">60dp</dimen> <!-- Added corner radius -->
+        <dimen name="elevation_sdp_4">4dp</dimen>
+
+        <!-- ImageView Dimensions -->
+        <dimen name="width_sdp_275">275dp</dimen>
+        <dimen name="width_sdp_152">152dp</dimen>
+        <dimen name="width_sdp_80">80dp</dimen>
+        <dimen name="height_sdp_82">82dp</dimen>
+        <dimen name="width_sdp_58">58dp</dimen>
+        <dimen name="width_sdp_291">291dp</dimen>
+        <dimen name="width_sdp_50">50dp</dimen>
+        <dimen name="width_sdp_39">39dp</dimen>
+        <dimen name="height_sdp_48">48dp</dimen>
+        <dimen name="height_sdp_40">40dp</dimen>
+        <dimen name="height_sdp_53">53dp</dimen>
+        <dimen name="height_sdp_58">58dp</dimen>
+        <dimen name="height_sdp_51">51dp</dimen>
+        <dimen name="height_sdp_578">578dp</dimen>
+        <dimen name="height_sdp_533">533dp</dimen>
+        <dimen name="width_sdp_350">350dp</dimen>
+        <dimen name="width_sdp_190">190dp</dimen>
+    <dimen name="width_sdp_24">24dp</dimen>
+        <dimen name="width_sdp_65">65dp</dimen>
+        <dimen name="width_sdp_77">77dp</dimen>
+        <dimen name="width_sdp_262">242dp</dimen>
+        <dimen name="width_sdp_182">182dp</dimen>
+        <dimen name="width_sdp_120">120dp</dimen>
+        <dimen name="height_sdp_65">65dp</dimen>
+        <dimen name="height_sdp_77">77dp</dimen>
+        <dimen name="height_sdp_93">93dp</dimen>
+        <dimen name="height_sdp_60">60dp</dimen>
+
+        <!-- Other -->
+        <dimen name="indicator_height_sdp_4">4dp</dimen>
+        <dimen name="indicator_margin_sdp_16">16dp</dimen>
+
+</resources>
+

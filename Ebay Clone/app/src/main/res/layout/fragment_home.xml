@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context=".ui.home.HomeFragment">
+    <LinearLayout
+        android:id="@+id/linearLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_sdp_65"
+
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toTopOf="@+id/scrollViewContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- eBay Image on the left -->
+        <ImageView
+            android:id="@+id/imageViewEbay"
+            android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@drawable/rounded_corners"
+        android:padding="@dimen/padding_sdp_8"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ebay" /> <!-- Apply rounded corners -->
+
+        <!-- Cart Icon on the right -->
+        <ImageView
+            android:id="@+id/imageViewCart"
+            android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corners"
+        android:scaleType="center"
+        android:src="@drawable/baseline_shopping_cart_24" /> <!-- Apply rounded corners -->
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:id="@+id/scrollViewContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_sdp_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutHeader">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_sdp_8">
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_sdp_16"
+
+                android:backgroundTint="#E7E4E4"
+                android:queryHint="Search on eBay" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollViewCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_16"
+                android:fillViewport="true"
+                android:scrollbars="none"> <!-- Add this line to hide the scrollbar -->
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutButtons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_sdp_5">
+
+                    <Button
+                        android:id="@+id/buttonSelling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_sdp_8"
+                        android:background="@drawable/rounded_button"
+                        android:text="Selling"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_sdp_16" />
+
+                    <Button
+                        android:id="@+id/buttonDeals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_sdp_8"
+                        android:background="@drawable/rounded_button"
+                        android:text="Deals"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_sdp_16" />
+
+                    <Button
+                        android:id="@+id/buttonCategories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_button"
+                        android:text="Categories"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_sdp_16" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_sdp_20"
+                android:text="Sign in so we can personalise your eBay experience"
+                android:textAlignment="center"
+                android:textColor="#898989"
+                android:textSize="@dimen/textsize_sdp_34" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSignInRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_16"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_sdp_8"
+                    android:background="@drawable/rounded_button"
+                    android:text="Register"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_sdp_16" />
+
+                <Button
+                    android:id="@+id/buttonSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:text="Sign In"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_sdp_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutJustWhenNeeded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_sdp_15"
+                android:background="#F4F2F2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewJustWhenNeededTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_15"
+                    android:text="Just when you needed it most"
+                    android:textSize="@dimen/textsize_sdp_24"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewJustWhenNeededDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_sdp_12"
+                    android:layout_marginEnd="@dimen/margin_sdp_12"
+                    android:text="For your special just-in-time parts, we've got you covered."
+                    android:textSize="@dimen/textsize_sdp_16" />
+
+                <Button
+                    android:id="@+id/buttonShopNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_16"
+                    android:background="@drawable/rounded_button"
+                    android:text="Shop with us Now"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_sdp_20" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

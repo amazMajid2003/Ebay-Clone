@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_sdp_8">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Existing horizontal LinearLayout -->
+        <LinearLayout
+            android:id="@+id/linearLayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_sdp_8">
+
+            <ImageView
+                android:id="@+id/imageViewSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_sdp_10"
+                android:layout_weight="0.15"
+                android:scaleType="center"
+                android:src="@drawable/cross_round_svgrepo_com" />
+
+            <TextView
+                android:id="@+id/textViewCreateAccount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.85"
+                android:gravity="center"
+                android:text="Create an account"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/textsize_sdp_16"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- New vertical LinearLayout -->
+        <LinearLayout
+            android:id="@+id/linearLayoutIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_sdp_8"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_sdp_8"> <!-- Add margin for spacing -->
+
+            <TextView
+                android:id="@+id/textViewHello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_sdp_10"
+                android:gravity="start"
+                android:text="Let's get started"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_sdp_24"
+                android:textStyle="bold" /> <!-- Align text to start -->
+
+            <TextView
+                android:id="@+id/textViewInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_sdp_53"
+                android:gravity="start"
+                android:text="You can use your email, or connect with your social account."
+                android:textSize="@dimen/textsize_sdp_16" /> <!-- Align text to start -->
+
+        </LinearLayout>
+
+        <!-- Vertical LinearLayout for buttons -->
+        <LinearLayout
+            android:id="@+id/linearLayoutButtons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"> <!-- Center the buttons horizontally -->
+
+            <!-- Button for Email -->
+            <Button
+                android:id="@+id/buttonContinueWithEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_sdp_4"
+                android:background="@drawable/rounded_button"
+                android:text="Continue with email"
+                android:textSize="@dimen/textsize_sdp_12"/>
+
+            <!-- Button for Google -->
+            <Button
+                android:id="@+id/buttonContinueWithGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_sdp_4"
+                android:background="@drawable/rounded_button"
+                android:text="Continue with Google"
+                android:textSize="@dimen/textsize_sdp_12"/>
+
+            <!-- Button for Facebook -->
+            <Button
+                android:id="@+id/buttonContinueWithFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_sdp_4"
+                android:background="@drawable/rounded_button"
+                android:text="Continue with Facebook"
+                android:textSize="@dimen/textsize_sdp_12"/>
+
+            <!-- Button for Business Account -->
+            <Button
+                android:id="@+id/buttonCreateBusinessAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_sdp_4"
+                android:background="@drawable/rounded_button"
+                android:text="Create a business account"
+                android:textSize="@dimen/textsize_sdp_12"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

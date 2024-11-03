@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_sdp_8">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_sdp_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/Cancel_Bids"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:scaleType="center"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Bids &amp; offers"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_sdp_24"
+        android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:scaleType="center"
+            android:src="@drawable/baseline_search_24" />
+
+        <ImageView
+            android:id="@+id/imageViewCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="@drawable/rounded_corners"
+            android:scaleType="center"
+            android:src="@drawable/baseline_shopping_cart_24" />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active">
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't Win">
+        </com.google.android.material.tabs.TabItem>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_sdp_12"
+            android:paddingTop="@dimen/textsize_sdp_34">
+
+            <ImageView
+                android:id="@+id/SearchHeartIcon"
+                android:layout_width="@dimen/width_sdp_152"
+                android:layout_height="@dimen/width_sdp_152"
+                android:src="@drawable/auction_svgrepo_com"
+                android:backgroundTint="@color/black"
+                android:contentDescription="Auction Icon"
+                android:layout_marginBottom="@dimen/margin_sdp_10"
+                android:layout_marginTop="@dimen/margin_sdp_10" />
+            <TextView
+                android:id="@+id/MessagesText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nothing's here (yet)"
+                android:textSize="@dimen/textsize_sdp_24"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/MessagesText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start bidding and making offers on items and they will show up here."
+                android:textSize="@dimen/textsize_sdp_20"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

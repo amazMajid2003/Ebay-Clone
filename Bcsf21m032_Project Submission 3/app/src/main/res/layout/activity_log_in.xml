@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_sdp_8">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/margin_sdp_2"
+        android:layout_marginEnd="@dimen/margin_sdp_2">
+
+        <!-- Existing horizontal LinearLayout for Sign in at the top -->
+        <LinearLayout
+            android:id="@+id/linearLayoutSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_sdp_8">
+
+            <ImageView
+                android:id="@+id/imageViewSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_sdp_10"
+                android:layout_weight="0.15"
+                android:scaleType="center"
+                android:src="@drawable/cross_round_svgrepo_com" />
+
+            <TextView
+                android:id="@+id/textViewSignIn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.85"
+                android:gravity="center"
+                android:text="Sign in"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/textsize_sdp_24"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Centered content in a separate LinearLayout -->
+        <LinearLayout
+            android:id="@+id/centeredContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- New TextView for "Welcome" message -->
+            <TextView
+                android:id="@+id/textViewWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_sdp_34"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center" />
+
+            <!-- Input field for Username or Email -->
+            <EditText
+                android:id="@+id/editTextUsernameEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_16"
+                android:hint="Username or Email"
+                android:padding="10dp"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+            <!-- Input field for Password -->
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_8"
+                android:hint="Password"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+            <!-- Sign In Button -->
+            <Button
+                android:id="@+id/buttonSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_16"
+                android:background="@drawable/rounded_button"
+                android:text="Sign In"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+            <!-- Reset Password Text -->
+            <TextView
+                android:id="@+id/textViewResetPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_12"
+                android:text="Reset your password"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:textSize="@dimen/textsize_sdp_16"
+                android:textStyle="bold" />
+
+            <!-- Create New Account Text -->
+            <TextView
+                android:id="@+id/textViewCreateNewAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_8"
+                android:text="Create New Account"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:textSize="@dimen/textsize_sdp_16"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

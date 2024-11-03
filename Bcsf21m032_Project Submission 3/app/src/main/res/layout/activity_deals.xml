@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_sdp_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Cancel_Deals"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_sdp_10"
+            android:layout_weight="0.15"
+            android:scaleType="center"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55"
+
+            android:text="Deals"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_sdp_24"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.15"
+            android:scaleType="center"
+            android:src="@drawable/baseline_search_24" />
+
+        <ImageView
+            android:id="@+id/imageViewCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="@drawable/rounded_corners"
+            android:scaleType="center"
+            android:src="@drawable/baseline_shopping_cart_24" />
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_sdp_16"
+        android:background="@drawable/rounded_search_background"
+        android:backgroundTint="#E7E4E4"
+        android:queryHint="Search on eBay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/margin_sdp_8"
+        android:layout_marginTop="@dimen/margin_sdp_8"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_sdp_8"
+                android:text="Featured"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_sdp_8"
+                android:text="Tech"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_sdp_8"
+                android:text="Fashion"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_sdp_8"
+                android:text="Home &amp; Garder"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_sdp_8"
+                android:text="Sporting Goods"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_sdp_8"
+                android:text="Automotive"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_sdp_8"
+                android:text="Other deals"
+                android:textSize="@dimen/textsize_sdp_18" />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_sdp_8"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_sdp_24"
+                    android:text="Featured Deals"
+                    android:textStyle="bold"
+                    android:layout_weight="0.75" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="See all"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/textsize_sdp_18"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:paddingEnd="@dimen/margin_sdp_8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/iphone15"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Apple iPhone 15 "
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pro Max 256gb"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="$ 829.99"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="$1,199.00 | 31%off"
+                            android:textSize="@dimen/textsize_sdp_16"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/rack"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Storage Rack"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="27''W x 59''Hx.."
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="$ 37.99"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="$68.99 | 45%off"
+                            android:textSize="@dimen/textsize_sdp_16"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/lgtv"
+                           />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="LG OLED LED"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="OLED65C3P"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="$ 1,159.00"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="$3,199.00 | 64%off"
+                            android:textSize="@dimen/textsize_sdp_16"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/adidas"/>               android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Adidas Men"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Crazy 8 shoes"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="$ 56.00"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="$140.00 | 60%off"
+                            android:textSize="@dimen/textsize_sdp_16"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_sdp_24"
+                    android:text="Trending Deals"
+                    android:textStyle="bold"
+                    android:layout_weight="0.75" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="See all"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/textsize_sdp_18"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:paddingEnd="@dimen/margin_sdp_8" />
+            </LinearLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_16">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Card 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_sdp_8"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_sdp_8">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_sdp_152"
+                                android:layout_height="@dimen/width_sdp_152"
+                                android:src="@drawable/iphone_14"/>                                android:contentDescription="Industrial Work Gloves"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Apple iPhone 14"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pro Max 256gb"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$ 589.99"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$1,199.00 | 51%off"
+                                android:textSize="@dimen/textsize_sdp_16"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Card 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_sdp_8"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_sdp_8">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_sdp_152"
+                                android:layout_height="@dimen/width_sdp_152"
+                                android:src="@drawable/mtg"/>                                android:contentDescription="Cat Food Supplies"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="MTG MTGA"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Arena Code"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$ 3.40"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$5.00 | 32%off"
+                                android:textSize="@dimen/textsize_sdp_16"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_sdp_8"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_sdp_8">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_sdp_152"
+                                android:layout_height="@dimen/width_sdp_152"
+                                android:src="@drawable/iphone14"/>                                android:contentDescription="Automotive Care &amp; De..."/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Apple 14 "
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pro Max 128 gb"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$ 587.95.00"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$1,099.00 | 47%off"
+                                android:textSize="@dimen/textsize_sdp_16"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_sdp_8"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_sdp_8">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_sdp_152"
+                                android:layout_height="@dimen/width_sdp_152"
+                                android:src="@drawable/iphone16"/>                                android:contentDescription="Men's Razor Blade"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Apple 16 Pro Max"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="256gb"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$ 1,198.00"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$3,199.00 | 50%off"
+                                android:textSize="@dimen/textsize_sdp_16"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_sdp_24"
+                    android:text="Most Featured Deals"
+                    android:textStyle="bold"
+                    android:layout_weight="0.75" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="See all"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/textsize_sdp_18"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:paddingEnd="@dimen/margin_sdp_8" />
+            </LinearLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_16">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Card 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_sdp_8"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_sdp_8">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_sdp_152"
+                                android:layout_height="@dimen/width_sdp_152"
+                                android:src="@drawable/adidas2"/>                                android:contentDescription="Industrial Work Gloves"/>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Adidad Men"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Samosa Shoes"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$ 40.00"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$80.00 | 50%off"
+                                android:textSize="@dimen/textsize_sdp_16"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Card 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_sdp_8"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_sdp_8">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_sdp_152"
+                                android:layout_height="@dimen/width_sdp_152"
+                                android:src="@drawable/slipper"/>                                android:contentDescription="Cat Food Supplies"/>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Adidas Men"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Adilette Comfort"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$ 10.00"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$13.00 | 20%off"
+                                android:textSize="@dimen/textsize_sdp_16"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_sdp_8"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_sdp_8">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_sdp_152"
+                                android:layout_height="@dimen/width_sdp_152"
+                                android:src="@drawable/puma"/>                                android:contentDescription="Automotive Care &amp; De..."/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Puma's Men"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lamelo ball x"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$ 100.00"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$169.00 | 35%off"
+                                android:textSize="@dimen/textsize_sdp_16"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_sdp_8"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_sdp_8">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_sdp_152"
+                                android:layout_height="@dimen/width_sdp_152"
+                                android:src="@drawable/applewatch"/>                                android:contentDescription="Men's Razor Blade"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Apple Watch"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Fitness Pro"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$ 198.00"
+                                android:textSize="@dimen/textsize_sdp_18"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$299.00 | 43%off"
+                                android:textSize="@dimen/textsize_sdp_16"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

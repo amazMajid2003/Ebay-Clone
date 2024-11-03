@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/padding_sdp_8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_sdp_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Cancel_Garage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:scaleType="center"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55"
+            android:gravity="center"
+            android:text="My Garage"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_sdp_24"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.15"
+            android:scaleType="center"
+            android:src="@drawable/baseline_search_24" />
+
+        <ImageView
+            android:id="@+id/imageViewCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="@drawable/rounded_corners"
+            android:scaleType="center"
+            android:src="@drawable/baseline_shopping_cart_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_sdp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:padding="@dimen/padding_sdp_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What do you drive?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_sdp_20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:padding="@dimen/padding_sdp_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell us about your vehicle so we can find you the right parts."
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_sdp_16" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+
+        android:layout_margin="@dimen/margin_sdp_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add your vehicle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        android:background="@drawable/rounded_button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

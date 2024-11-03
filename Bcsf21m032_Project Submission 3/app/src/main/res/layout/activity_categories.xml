@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_sdp_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Cancel_Categories"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:scaleType="center"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55"
+            android:gravity="center"
+            android:text="Categories"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_sdp_24"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/antique"/>                                                <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Antique"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/art"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Art"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/baby"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Baby"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/book"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Book &amp;"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Magzines"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/industrial"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Business &amp;"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Industrial"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/camera"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cameras &amp;"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Photo"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/accessories" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Cell Phones &amp;"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsize_sdp_18" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Accessories"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsize_sdp_18" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/clothes" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Clothing &amp;"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsize_sdp_18" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Shoes"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsize_sdp_18" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/money"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Coins &amp; Paper"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Money"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/collectible"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Collectibles"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/computer"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Computers &amp;"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tablets"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/elec"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Consumer"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Electronics"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/movies"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Movies &amp; TV"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/beauty"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Health &amp;"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Beauty"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/jewelry"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jewelry &amp;"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Watches"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/pottery"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pottery &amp;"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Glass"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/console"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Video Games"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="&amp; Consoles"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/sports"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sporting"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Goods"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/instruments"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Musical"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" Instruments"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_sdp_8"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_sdp_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_sdp_120"
+                            android:layout_height="@dimen/width_sdp_120"
+                            android:src="@drawable/realestate"/>                            android:contentDescription="Industrial Work Gloves"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Real Estate"
+                            android:textSize="@dimen/textsize_sdp_18"
+                            android:gravity="center"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

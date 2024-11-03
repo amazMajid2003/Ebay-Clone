@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_sdp_8"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_sdp_8"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Cancel_Settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:scaleType="center"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55"
+            android:text="Settings"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_sdp_24"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="Account"
+                android:textSize="@dimen/textsize_sdp_24"
+                android:padding="@dimen/padding_sdp_8"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_sdp_8"
+                android:text="Sign in and security"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notifications"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Emails"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="eBay Gift card and Balance"
+                android:textSize="@dimen/textsize_sdp_20"/>
+
+            <TextView
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Measurements and Analytics"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign out"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="Selling"
+                android:textSize="@dimen/textsize_sdp_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_height="wrap_content"
+                android:text="Ships from address"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_height="wrap_content"
+                android:text="Return address"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_height="wrap_content"
+                android:text="Time Away"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="General"
+                android:padding="@dimen/padding_sdp_8"
+                android:textSize="@dimen/textsize_sdp_24"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:padding="@dimen/padding_sdp_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Theme"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textsize_sdp_22"/>
+                <TextView
+                    android:padding="@dimen/padding_sdp_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Use Dark Theme only when your device has Battery Saver enabled"
+                    android:textSize="@dimen/textsize_sdp_20"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:padding="@dimen/padding_sdp_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Country or region"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_sdp_22"/>
+                <TextView
+                    android:padding="@dimen/padding_sdp_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="United States"
+                    android:textSize="@dimen/textsize_sdp_20"/>
+            </LinearLayout>
+            <TextView
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Translation"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clear Search history"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="Support"
+                android:textSize="@dimen/textsize_sdp_24"/>
+            <TextView
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer Service"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shake to report"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_height="wrap_content"
+                android:text="Share Screen with us"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="About"
+                android:textSize="@dimen/textsize_sdp_24"/>
+            <TextView
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Agreement"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_height="wrap_content"
+                android:text="Privacy"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:padding="@dimen/padding_sdp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Legal"
+                android:textSize="@dimen/textsize_sdp_20"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="eCI Licenses"
+                android:padding="@dimen/padding_sdp_8"
+                android:textSize="@dimen/textsize_sdp_20"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

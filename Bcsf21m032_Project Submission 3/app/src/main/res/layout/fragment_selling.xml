@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="false"
+    android:padding="@dimen/padding_sdp_8"
+    tools:context="ui.selling.SellingFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_sdp_65"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- TextView on the left -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/margin_sdp_4"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:text="Selling"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize_sdp_26" />
+
+        <!-- Cart Icon on the right -->
+        <ImageView
+            android:id="@+id/imageViewCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@drawable/rounded_corners"
+            android:scaleType="center"
+            android:src="@drawable/baseline_shopping_cart_24" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollViewSelling"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutHeader"
+        app:layout_constraintBottom_toTopOf="@id/LinearLayoutSelling"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Image with TextView overlay -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/width_sdp_152"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/business" />
+
+                <TextView
+                    android:layout_marginRight="@dimen/width_sdp_39"
+                    android:layout_width="@dimen/width_sdp_152"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:padding="@dimen/margin_sdp_16"
+                    android:text="Make money selling on eBay"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsize_sdp_20"
+                    android:textStyle="bold"
+                    android:maxLines="3"
+                    android:ellipsize="end" /> <!-- Truncate if it exceeds the max lines -->
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- TextView for "Learn the basics" -->
+                <TextView
+                    android:id="@+id/textViewLearnBasics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_sdp_16"
+                    android:text="Learn the basics"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textsize_sdp_18" />
+
+                <!-- Horizontal LinearLayout for "List your items" -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_sdp_16">
+
+                    <!-- ImageView (25% width) -->
+                    <ImageView
+                        android:id="@+id/imageViewListItems"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_sdp_65"
+                        android:layout_weight="0.25"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/one_circle_svgrepo_com" /> <!-- Replace with your image -->
+
+                    <!-- TextView (75% width) -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewListItemsTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="List your items"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textsize_sdp_20"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewListItemsDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="You can list new or used items and pay a final value fee only when it sells."
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textsize_sdp_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Horizontal LinearLayout for "Get seller protection" -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_sdp_16">
+
+                    <!-- ImageView (25% width) -->
+                    <ImageView
+                        android:id="@+id/imageViewSellerProtection"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_sdp_65"
+                        android:layout_weight="0.25"
+                        android:scaleType="fitStart"
+
+                        android:src="@drawable/two_circle_svgrepo_com" /> <!-- Replace with your image -->
+
+                    <!-- TextView (75% width) -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewSellerProtectionTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get seller protection"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textsize_sdp_20"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewSellerProtectionDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="You're protected by policies, monitoring, and our customer service team."
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textsize_sdp_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Horizontal LinearLayout for "Choose when you get paid" -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_sdp_16">
+
+                    <!-- ImageView (25% width) -->
+                    <ImageView
+                        android:id="@+id/imageViewPaymentOptions"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_sdp_65"
+                        android:layout_weight="0.25"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/three_circle_svgrepo_com" /> <!-- Replace with your image -->
+
+                    <!-- TextView (75% width) -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewPaymentOptionsTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Choose when you get paid"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textsize_sdp_20"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewPaymentOptionsDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="You can schedule either daily or weekly payouts, and we'll deposit your earnings directly into your bank account."
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textsize_sdp_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- TextView for "Create a great listing" -->
+                <TextView
+                    android:id="@+id/textViewCreateGreatListingTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_sdp_16"
+                    android:text="Create a great listing"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textsize_sdp_18" />
+
+                <!-- TextView for "Here's five ways to set yourself up for success" -->
+                <TextView
+                    android:id="@+id/textViewCreateGreatListingDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_sdp_16"
+                    android:text="Here's five ways to set yourself up for success"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize_sdp_16" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutSelling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List an item"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
+            />
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

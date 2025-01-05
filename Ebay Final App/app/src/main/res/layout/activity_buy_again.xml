@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_sdp_8">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_sdp_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Cancel_buyagain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_sdp_10"
+            android:layout_weight="0.15"
+            android:scaleType="center"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55"
+            android:gravity="center"
+            android:text="Buy again"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_sdp_24"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="@drawable/rounded_corners"
+            android:scaleType="center"
+            android:src="@drawable/baseline_shopping_cart_24" />
+    </LinearLayout>
+
+    <!-- Content Section -->
+    <ScrollView
+        android:id="@+id/scrollViewBuyAgain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_30sdp">
+
+            <!-- Section Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Previously Bought"
+                android:textSize="@dimen/textsize_sdp_24"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/margin_sdp_16" />
+
+            <!-- RecyclerView for Orders -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewOrders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_16"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/padding_sdp_8" />
+
+            <!-- Placeholder for No Orders -->
+            <TextView
+                android:id="@+id/noOrdersText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sdp_16"
+                android:gravity="center"
+                android:text="No orders found"
+                android:textSize="@dimen/textsize_sdp_18"
+                android:textColor="@android:color/darker_gray"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

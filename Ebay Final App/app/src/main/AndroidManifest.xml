@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EBay_clone"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity
+            android:name=".ui.myebay.SignInActivity"
+            android:exported="true"
+            android:label="Sign In" />
+        <activity android:name=".ui.myebay.LogInActivity"
+            android:exported="true"
+            android:label="Log In">
+
+        </activity>
+    <activity android:name=".ui.home.SplashScreenActivity"
+        android:exported="true"
+        android:label="Splash Screen">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+    </activity>
+        <activity android:name=".ui.myebay.ProductActivity"
+            android:exported="true"
+            android:label="Product"/>
+        <activity android:name=".ui.myebay.ProductsActivity"
+            android:exported="true"
+            android:label="Product"/>
+        <activity android:name=".ui.myebay.CartActivity"
+            android:exported="true"
+            android:label="Cart"/>
+        <activity
+            android:name=".ui.myebay.SignUpActivity"
+            android:exported="true"
+            android:label="Sign Up"/>
+        <activity
+            android:name=".ui.myebay.LogUpActivity"
+            android:exported="true"
+            android:label="Log Up"/>
+        <activity
+            android:name=".ui.myebay.MessagesActivity"
+            android:exported="true"
+            android:label="Messages"/>
+        <activity
+            android:name=".ui.myebay.PurchasesActivity"
+            android:exported="true"
+            android:label="Purchases"/>
+        <activity
+            android:name=".ui.myebay.MyGarageActivity"
+            android:exported="true"
+            android:label="My Garage"/>
+        <activity
+            android:name=".ui.myebay.RecentlyViewedActivity"
+            android:exported="true"
+            android:label="Recently Viewed"/>
+        <activity
+            android:name=".ui.myebay.BidsAndOffersActivity"
+            android:exported="true"
+            android:label="Bids and Offers"/>
+        <activity
+            android:name=".ui.myebay.SavedActivity"
+            android:exported="true"
+            android:label="Saved"/>
+        <activity
+        android:name=".ui.myebay.WatchlistActivity"
+        android:exported="true"
+        android:label="Watchlist"/>
+        <activity
+            android:name=".ui.myebay.BuyAgainActivity"
+            android:exported="true"
+            android:label="Buy Again"/>
+        <activity
+            android:name=".ui.myebay.CategoriesActivity"
+            android:exported="true"
+            android:label="Categories"/>
+        <activity
+            android:name=".ui.myebay.Deals_Activity"
+            android:exported="true"
+            android:label="Deals"/>
+        <activity
+            android:name=".ui.myebay.PaymentsActivity"
+            android:exported="true"
+            android:label="Payments"/>
+        <activity
+            android:name=".ui.myebay.SettingsActivity"
+            android:exported="true"
+            android:label="Settings"/>
+
+    </application>
+
+</manifest>

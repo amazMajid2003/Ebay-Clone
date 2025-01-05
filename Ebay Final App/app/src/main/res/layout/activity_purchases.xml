@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_sdp_8">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_sdp_5"
+        android:paddingTop="@dimen/padding_sdp_8">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/Cancel_Purchases"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="0.15"
+            android:scaleType="center"
+            android:contentDescription="Back button"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55"
+            android:text="Purchases"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:paddingTop="@dimen/margin_sdp_2"
+            android:textSize="@dimen/textsize_sdp_24"
+            android:textStyle="bold" />
+
+        <!-- Cart Icon -->
+        <ImageView
+            android:id="@+id/imageViewCart"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/rounded_corners"
+            android:contentDescription="Cart icon"
+            android:scaleType="center"
+            android:src="@drawable/baseline_shopping_cart_24" />
+    </LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Previous Orders"
+    android:textSize="@dimen/textsize_sdp_20"
+    android:padding="@dimen/padding_sdp_8"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:id="@+id/PreviousOrders"/>
+    <LinearLayout
+        android:id="@+id/LinearLayoutPurchases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="@dimen/width_sdp_152"
+            android:layout_height="@dimen/width_sdp_152"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding_sdp_8"
+            android:src="@drawable/refresh_double_svgrepo_com" />
+        <TextView
+            android:id="@+id/emptyOrdersText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/padding_sdp_8"
+            android:layout_marginTop="@dimen/margin_sdp_20"
+            android:text="You haven't purchased anything."
+            android:textSize="@dimen/textsize_sdp_18"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ordersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="@dimen/margin_sdp_8" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="false"
+    tools:context="com.example.ebay_clone.ui.search.SearchFragment"
+    android:padding="@dimen/padding_sdp_8"
+    android:background="@drawable/wallpaper_5">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_sdp_8"
+        android:queryHint="Search on eBay"
+        app:layout_constraintBottom_toTopOf="@+id/SearchesText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_search_background"/>
+
+    <TextView
+        android:id="@+id/SearchesText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_sdp_40"
+        android:text="Recent Searches By User"
+        android:textAlignment="textStart"
+        android:textColor="#6767D3"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/textsize_sdp_20"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSearchResults"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/SearchesText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

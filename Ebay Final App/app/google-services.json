@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "706514379915",
+    "project_id": "my-ebay-123",
+    "storage_bucket": "my-ebay-123.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706514379915:android:317de2d0d6683defb9208e",
+        "android_client_info": {
+          "package_name": "com.example.ebay_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClLlwTdTAZZAN6lwvi8i3KU6aQZcQnsxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

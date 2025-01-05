@@ -1,66 +1,167 @@
-# Ebay-Clone
-Here’s the text you can copy and paste directly into your GitHub `README.md` file:
 
-```markdown
-# eBay Clone Project
 
-## Project Overview
-This project is an eBay clone, designed as a mobile application using Android Studio and Kotlin. It replicates the core functionality of the popular e-commerce platform eBay, including user authentication, product browsing, and user profiles. The current version of the application features static designs for the home, sign-in, sign-up, and profile screens, with plans to make these screens dynamic and responsive in future updates.
+# eBay Clone App
+
+### Overview
+
+The eBay Clone App is a feature-rich mobile application developed using **Android Studio** and **Kotlin**. It replicates key functionalities of eBay, including user authentication, product search, saving items, adding to the cart, placing orders, and tracking recently viewed products. The app integrates **Firebase Authentication** for secure login and sign-up and leverages the **Firebase Realtime Database** to store and retrieve product, category, order, and user-related data.
+
+---
+
+## Features
+
+1. **User Authentication**
+   - Users can securely sign up or log in using Firebase Authentication.
+   - Password-based authentication ensures user data protection.
+
+2. **Product Catalog**
+   - Products are organized into categories (e.g., Electronics, Antiques, Art, etc.).
+   - Each product displays details like name, brand, price, discount, and an image.
+
+3. **Search Functionality**
+   - Users can search for products using a keyword-based search.
+
+4. **Wishlist & Cart**
+   - Save products for later (wishlist functionality).
+   - Add products to the cart and manage quantities before placing an order.
+
+5. **Order Management**
+   - Place orders seamlessly and view order history.
+   - Track total order amounts.
+
+6. **Recently Viewed Products**
+   - Displays a list of recently viewed products for easy access.
+
+---
+
+## Technology Stack
+
+- **Frontend**: XML layouts for designing UI.
+- **Backend**: Kotlin in Android Studio.
+- **Database**: Firebase Realtime Database.
+- **Authentication**: Firebase Authentication.
+
+---
+
+## Firebase Realtime Database Structure
+
+### Categories
+Stores product categories along with their names and images.
+
+```json
+"Category": {
+  "c1": {
+    "Name": "Antique",
+    "turl": "image_url_here"
+  },
+  ...
+}
+```
+
+### Products
+Stores all product details, including name, brand, category, price, discount, and image URL.
+
+```json
+"Products": {
+  "pid1": {
+    "Brand": "Apple",
+    "CategoryName": "Cell Phones & Accessories",
+    "Name": "Iphone13",
+    ...
+  },
+  ...
+}
+```
+
+### Orders
+Contains user order details such as order items, total amount, and user information.
+
+```json
+"Orders": {
+  "order_id": {
+    "orderDate": "timestamp",
+    "orderItems": [
+      {
+        "productName": "Iphone13",
+        "discountedPrice": 800,
+        ...
+      }
+    ],
+    "totalAmount": 845,
+    "userId": "user_id_here"
+  }
+}
+```
+
+---
 
 ## Setup Instructions
-To set up the project locally, follow these steps:
 
-1. **Clone the repository:**
+### Prerequisites
+1. **Android Studio**: Latest version installed on your system.
+2. **Firebase Console**: A Firebase project set up with Realtime Database and Authentication enabled.
+
+### Steps to Setup
+1. Clone the repository:
    ```bash
-   git clone https://github.com/amazMajid2003/Ebay-Clone.git
+   git clone https://github.com/your-repo/ebay-clone-app.git
    ```
+2. Open the project in Android Studio.
+3. Configure Firebase:
+   - Add your app to Firebase Console.
+   - Download the `google-services.json` file from Firebase and place it in the `app/` directory.
+   - Enable **Realtime Database** and **Authentication** in Firebase Console.
 
-2. **Open the project in Android Studio:**
-   - Launch Android Studio.
-   - Click on "Open an existing project" and select the cloned directory.
+4. Sync the project with Gradle to install dependencies.
+5. Run the app on an emulator or a physical device.
 
-3. **Build the project:**
-   - In Android Studio, click on "Build" in the toolbar and select "Make Project" to compile the app.
+---
 
-4. **Run the application:**
-   - Connect an Android device or start an Android emulator.
-   - Click the "Run" button to install the app on your device/emulator.
+## Key Functionalities and Screens
 
-## Screens Designed
+### 1. **Login and Sign Up**
+   - Uses Firebase Authentication for secure user login and registration.
 
-### 1. Home Screen
-   - Displays an initial product list and navigation options for users to browse items (static at this stage).
+### 2. **Home Screen**
+   - Displays categories with thumbnail images.
+   - Allows users to browse products by category.
 
-### 2. Sign-In Screen
-   - Allows existing users to log into their accounts (currently non-functional, static design only).
+### 3. **Product Details**
+   - Displays detailed information about the product.
+   - Options to add to the cart or save for later.
 
-### 3. Sign-Up Screen
-   - Provides a registration form for new users to create an account (static design).
+### 4. **Search**
+   - Search products by name or keyword.
 
-### 4. Profile Screen
-   - Displays user profile information such as name, email, and other account details (static design).
+### 5. **Cart**
+   - View products added to the cart.
+   - Modify quantities or remove products.
 
-In future updates, these screens will become fully functional with API integrations and dynamic user data.
+### 6. **Order History**
+   - Displays previously placed orders.
 
-## Technical Challenges Faced
+### 7. **Recently Viewed Products**
+   - Tracks and shows the last viewed products for the user.
 
-- **Responsive Design:** Ensuring a responsive UI across different screen sizes is an ongoing challenge. Currently, the designs are static and will need significant adjustment to become fully responsive.
+---
 
-- **Kotlin Development:** While Kotlin provides many powerful features, adapting to the language nuances, especially around handling Android lifecycle events and data binding, posed some challenges during development.
+## Future Enhancements
+- **Responsive UI**: Adapting to different screen sizes and orientations.
+- **Payment Gateway Integration**: Adding support for online payments.
+- **Push Notifications**: Notify users of discounts, offers, and order status.
 
-- **Authentication Integration:** Although not yet implemented, integrating authentication (OAuth, Firebase, or custom backend) will be a significant technical hurdle in future updates.
+---
 
-## Future Plans
+## Contribution
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m "Added a new feature"`.
+4. Push to the branch: `git push origin feature-name`.
+5. Create a pull request.
 
-- **Dynamic Screens:** Convert the static screens into fully responsive designs that can handle different screen sizes and orientations.
+---
 
-- **User Authentication:** Implement sign-in and sign-up functionality using a backend service.
+## License
+This project is licensed under the MIT License.
 
-- **Product Listings and Search:** Integrate product search and filtering functionalities to enhance the user experience.
-
-- **Profile Management:** Allow users to view and edit their profile information dynamically.
-
-- **Backend Integration:** Connect the application to a backend service for handling user data, product listings, and orders.
-
-Stay tuned for future updates as we work towards making this eBay clone fully functional!
-```
+---
